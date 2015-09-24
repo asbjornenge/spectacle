@@ -1,23 +1,55 @@
 import React from "react/addons";
-
 import {
-  Appear, BlockQuote, Cite, CodePane, Deck, Fill,
+  Appear, BlockQuote, Cite, CodePane, Deck, Fill, Fit,
   Heading, Image, Layout, Link, ListItem, List, Quote, Slide, Text
 } from "../src/spectacle";
-
 import preloader from "../src/utils/preloader";
-
 import Interactive from "./interactive";
+import ReactLogo from "./react-logo"
 
 const images = {
   city: require("./city.jpg"),
   kat: require("./kat.png"),
-  logo: require("./formidable-logo.svg")
+  logo: require("./formidable-logo.svg"),
+  reactBig: require("./ReactBig.png")
 };
 
-preloader([images.city, images.kat]);
+preloader([images.city, images.kat, images.reactBig]);
+
+ReactLogo.defaultProps = {
+  prefixClassName: 'react-logo',
+  pathStrokeWidth: 4,
+  pathFillColor: 'none',
+  pathStrokeColor: '#61dafb',
+  bigCircleFillColor: '#61dafb',
+  smallCircleFillColor: '#ccc',
+  bigCircleRadius: 16,
+  smallCircleRadius: 6,
+  animation: true,
+  duration: 200
+};
 
 export default class extends React.Component {
+    render() {
+        return (
+            <Deck>
+                <Slide bgImage={images.reactBig.replace("/", "")} bgDarken={0.75}>
+                    <Heading size={1}>
+                        Advanced React
+                    </Heading>
+                    <ReactLogo />
+                </Slide>
+                <Slide>
+                    <Heading size={1}>
+                        Advanced React
+                    </Heading>
+                </Slide>
+            </Deck>
+        )
+    }
+}
+
+class Old extends React.Component {
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={800}>

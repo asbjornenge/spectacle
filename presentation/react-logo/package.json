@@ -1,0 +1,74 @@
+{
+  "name": "react-logo",
+  "version": "1.0.7",
+  "description": "react logo",
+  "keywords": [
+    "react",
+    "ui component",
+    "ui",
+    "component"
+  ],
+  "homepage": "http://xudafeng.github.io/react-logo",
+  "author": {
+    "name": "xudafeng@126.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xudafeng/react-logo.git"
+  },
+  "scripts": {
+    "lint": "make lint",
+    "test": "make test"
+  },
+  "dependencies": {},
+  "pre-commit": [
+    "lint"
+  ],
+  "startserver": [
+    {
+      "startserver-webpack": "*"
+    }
+  ],
+  "devDependencies": {
+    "react": "~0.13.3",
+    "mocha": "*",
+    "forkmeon.github.io": "~1.1.1",
+    "istanbul-harmony": "~0.3.0",
+    "should": "*",
+    "eslint-plugin-react": "~2.5.2",
+    "webpack": "~1.9.0",
+    "babel-core": "^5.x",
+    "babel-loader": "^5.x",
+    "json-loader": "^0.5.2",
+    "jsx-loader": "^0.12.2",
+    "startserver": "*",
+    "startserver-webpack": "*",
+    "pre-commit": "*"
+  },
+  "licenses": "MIT",
+  "gitHead": "20b26599158e4409ce7e219013a95d717bc48398",
+  "bugs": {
+    "url": "https://github.com/xudafeng/react-logo/issues"
+  },
+  "_id": "react-logo@1.0.7",
+  "_shasum": "d7c9c1f63d9bbbbc97a0215ea4d3d04d017301ad",
+  "_from": "react-logo@*",
+  "_npmVersion": "2.7.0",
+  "_nodeVersion": "1.5.0",
+  "_npmUser": {
+    "name": "xudafeng",
+    "email": "xudafeng@126.com"
+  },
+  "maintainers": [
+    {
+      "name": "xudafeng",
+      "email": "xudafeng@126.com"
+    }
+  ],
+  "dist": {
+    "shasum": "d7c9c1f63d9bbbbc97a0215ea4d3d04d017301ad",
+    "tarball": "http://registry.npmjs.org/react-logo/-/react-logo-1.0.7.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/react-logo/-/react-logo-1.0.7.tgz"
+}
